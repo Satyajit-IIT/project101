@@ -4,7 +4,7 @@
 
 int xfn(void)
 {
-	return yfn(1);
+	return yfn(2);
 }
 
 int main(void)
