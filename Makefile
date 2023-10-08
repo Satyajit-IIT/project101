@@ -28,6 +28,10 @@ $(BINARY): $(OBJECTS)
 clean:
 	rm -rf $(BINARY) $(OBJECTS) $(DEPFILES)
 
+diff:
+	$(info The status of the directory is below:)
+	git status
+	git diff --stat
 
 # include the dependencies
 -include $(DEPFILES)
