@@ -28,6 +28,9 @@ $(BINARY): $(OBJECTS)
 clean:
 	rm -rf $(BINARY) $(OBJECTS) $(DEPFILES)
 
+stat:
+	$(info Follwoing are the output of git status:)
+	@git status
 
 # include the dependencies
 -include $(DEPFILES)
